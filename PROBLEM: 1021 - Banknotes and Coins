@@ -1,0 +1,51 @@
+t= float(input())
+
+print(f'NOTAS:')
+x = int(t/100)
+print(f'{x} nota(s) de R$ 100.00')
+mod = t%100
+
+x = int(mod/50)
+print(f'{x} nota(s) de R$ 50.00')
+mod = mod%50
+
+x = int(mod/20)
+print(f'{x} nota(s) de R$ 20.00')
+mod = mod%20
+
+x = int(mod/10)
+print(f'{x} nota(s) de R$ 10.00')
+mod = mod%10
+
+x = int(mod/5)
+print(f'{x} nota(s) de R$ 5.00')
+mod = mod%5
+
+x = int(mod/2)
+print(f'{x} nota(s) de R$ 2.00')
+mod = mod%2
+
+print(f'MOEDAS:')
+x = int(mod/1)
+print(f'{x} nota(s) de R$ 1.00')
+mod = mod%1*100
+
+x = int(mod/50)
+print(f'{x} moeda(s) de R$ 0.50')
+mod = mod%50
+
+x = int(mod/25)
+print(f'{x} moeda(s) de R$ 0.25')
+mod = mod%25
+
+x = int(mod/10)
+print(f'{x} moeda(s) de R$ 0.10')
+mod = mod%10
+
+x = int(mod/5)
+print(f'{x} moeda(s) de R$ 0.05')
+mod = mod%5
+
+print(f'{x} moeda(s) de R$ 0.01')
+
+
